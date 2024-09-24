@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav bar section */
+
+.navbar{
+    width: 100%;
+}
+
+.position-nav{
+    margin-left: 110px;
+}
+
+.navbar-nav .nav-eff {
+    font-weight: 500;
+}
+
+.navbar-nav .nav-eff:hover {
+    color: red;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Index section */
+
+.gap-container{
+    margin-top: 90px;
+}
+
+.card-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.no-border {
+    border: none !important;      
+    border-radius: 0 !important;    
+    box-shadow: none !important;  
+  }
+
+  .no-border .card-img {
+    border-radius: 0 !important;    
+  }
+  
+
+  .no-border .card-img-overlay {
+    border-radius: 0 !important;   
+  }
+  
+
+  .card-home-title{
+    margin-top: 90px;
+  }
+
+  .button-home{
+    position: absolute;
+    top: 72%;
+    left: 48%;
+  }
+
+
+.project-title {
+    position: relative;
+    text-align: center;
+}
+
+.project-title::before,
+.project-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    height: 2px;
+    background-color: #000;
+}
+
+.project-title::before {
+    right: 60%; 
+    margin-right: 10px; 
+}
+
+.project-title::after {
+    left: 60%; 
+    margin-left: 10px;
+}
+
+ /* for project section */
+
+.section {
+    display:none; 
+  }
+  
+  .section:target {
+    display: block; 
+  }
+  
+  html {
+    scroll-behavior:smooth;
+  }
+  
+:target::before {
+    content: '';
+    display: block;
+    height: 220px;
+    margin-top: -220px;
+  }
+
+
+
+/* About section */
+
+.icon-about:hover{
+    color: white;
+
+}
+
+.card-body-about:hover{
+
+    background-color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.custom-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-underline::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.para-about{
+    margin-bottom: 50px;
+}
+ 
+
+ .img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-img {
+    position: relative;
+    top: 80px;
+    right: 160px;
+    z-index: 1;
+    transition: z-index 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.hover-img {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    z-index: 0;
+    transition: z-index 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.img-container:hover .main-img {
+    z-index: 0;
+    transform: scale(0.95);
+}
+
+.img-container:hover .hover-img {
+    z-index: 1; 
+    transform: scale(1.05); 
+}
+
+.bi-play-circle{
+    position: relative;
+    top: 2px;
+}
+
+
+.card-stats{
+    margin-top: 80px;
+}
+
+.card-stats img{
+    margin-top: 130px;
+}
+
+
+
+/* services section */
+.carousel-item>img{
+    height: 80vh;
+    width: 100%;
+
+}
+
+.card-secrvice-hover:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bi-bricks,.bi-building-gear,.bi-buildings,.bi-grid-3x3-gap,.bi-hdd-rack,.bi-house-gear{
+    margin-right: 18.9rem;
+    margin-left: 130px;
+    padding: 1rem;
+    border-radius: 50%;
+    transition:all 0.2s ease-in-out;
+ }
+ 
+ .bi-bricks:hover,.bi-building-gear:hover,.bi-buildings:hover,.bi-grid-3x3-gap:hover,.bi-hdd-rack:hover,.bi-house-gear:hover{
+     background-color: #0080FF;
+     color: white;
+ 
+  }
+ 
+/* gallery section */
+.gallery-section{
+    display: block;
+}
+
+
+/* Contact section */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 2; 
+}
+
+.image-container .btn:hover {
+    background-color: #007bff; 
+    color: white;              
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.card-details{
+    font-weight: bolder;
+}
+.card-details:hover{
+    color: gray;
+
+}
+.card-main {
+    transition: transform 0.3s ease-in-out;
+  }
+.card-main:hover {
+    transform: scale(1.05);
+  }
+
+.section-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color:lightslategray ;
+    border-radius: 20px;
+}
+
+.section-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.form-label-contact-us{
+    color: white;
+}
+
+/* Sign-in Register*/
+.transparent-card {
+    background-color:transparent;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    backdrop-filter: blur(13px);
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.body-sign-in {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.img-top-sign-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+/* Footer section */
+
+
+.logo-display{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-right: 40px;
+}
+
+.bi-facebook{
+    color: rgb(58,117,184);
+    font-size: larger;
+
+}
+.bi-instagram{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-clip:text ;
+    color: transparent;
+    font-size: larger;  
+}
+
+.bi-whatsapp{
+    background: green;
+    background-clip: text;
+    color: transparent;
+    font-size: larger;  
+}
+
+.bi-play-btn-fill{
+    background: red;
+    background-clip: text;
+    color: transparent;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.bi-twitter-x{
+    color: black;
+    font-size: larger;
+}
+
+.para{
+    text-align: justify;
+    width: 90%;
+}
+
+.footer-link p:hover {
+    font-weight: 500;
+}
+
+
+.alpha{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+.alpha:hover {
+    font-weight: 500;
+}
+
+
+
+/* pop up box */
+.modal-body>img{
+    height: 60vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px){
+
+    .position-nav{
+        margin-left: 0px;
+    }
+
+
+    .navbar-nav .nav-eff {
+        font-weight: 500;
+    }
+    
+    .navbar-nav .nav-eff:hover {
+        color: red;
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    .image-container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2px 5px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        transition: background-color 0.3s, color 0.3s; 
+    }
+    
+    .image-container .btn:hover {
+        background-color: #007bff; 
+        color: white;              
+    }
+
+    .card-img-top{
+        position: relative;
+        left:5%;
+        margin-top: 20px;
+    }
+
+    .section-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        
+    }
+
+    iframe{
+        height: 450px;
+    }
+    
+    .body-sign-in {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .img-top-sign-in {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        transform: scale(5);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .transparent-card {
+        background-color: transparent;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid white;
+        backdrop-filter: blur(13px);
+        width: 85%;
+        top: 30%; 
+        left: 10%;
+    }
+
+    .project-title {
+        position: relative;
+        text-align: center;
+    }
+    
+    .project-title::before,
+    .project-title::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 10%;
+        height: 2px;
+        background-color: #000;
+    }
+    
+    .project-title::before {
+        right: 72%; 
+        margin-right: 10px; 
+    }
+    
+    .project-title::after {
+        left: 72%; 
+        margin-left: 10px;
+    }
+
+    .img-services{
+        height: 700px;
+    }
+    
+    .carousel-item>img{
+        height: 30vh;
+    
+    }
+    
+   .modal-body>img{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .img-home{
+        margin-top: 50px;
+    }
+
+    .title-home{
+        margin-top: 40px;
+    }
+
+    .button-home{
+        position: absolute;
+        top: 80%;
+        left:38%;
+        padding: 0.2rem;
+      }
+
+    
+    .custom-underline {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .custom-underline::after {
+        content: ""; 
+        position: absolute;
+        left: -110px;
+        bottom: -20px;
+        width: 260%;
+        height: 2px;
+        background-color: black;
+    }
+    
+
+    .para-about{
+        margin-bottom:0px;
+    }
+
+    
+    .img-about2{
+        margin-top: 20px;
+    }
+    
+.bi-bricks,.bi-building-gear,.bi-buildings,.bi-grid-3x3-gap,.bi-hdd-rack,.bi-house-gear{
+    margin-right: 18.3rem;
+    margin-left: 130px;
+    padding: 1rem;
+    border-radius: 50%;
+    transition:all 0.2s ease-in-out;
+ }
+ 
+ .bi-bricks:hover,.bi-building-gear:hover,.bi-buildings:hover,.bi-grid-3x3-gap:hover,.bi-hdd-rack:hover,.bi-house-gear:hover{
+     background-color: #0080FF;
+     color: white;
+ 
+  }
+.card-stats{
+    margin-top: 50px;
+}
+
+.card-stats img{
+    margin-top: 20px;
+}
+
+
+ 
+}
